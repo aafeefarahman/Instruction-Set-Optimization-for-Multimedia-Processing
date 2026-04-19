@@ -60,7 +60,8 @@ python image_video_processing_optimization.py
 ---
 
 ## Image Performance Graph
-<img width="525" height="323" alt="image" src="https://github.com/user-attachments/assets/501569d0-2a72-48f3-b5dc-958aa749b549" />
+<img width="578" height="458" alt="image" src="https://github.com/user-attachments/assets/761cddcb-3743-4164-aaad-86cf8b1029c1" />
+
 
 This bar graph compares execution time between sequential and optimized processing
 * Sequential processing takes significantly more time due to repeated pixel operations
