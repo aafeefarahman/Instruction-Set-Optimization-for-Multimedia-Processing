@@ -72,7 +72,7 @@ This bar graph compares execution time between sequential and optimized processi
 
 ## Video Processing Results
 
-<img width="479" height="147" alt="image" src="https://github.com/user-attachments/assets/c81c1c50-be20-448f-b25c-b87d5eee1a1c" />
+<img width="1140" height="524" alt="image" src="https://github.com/user-attachments/assets/54b1fe6e-9c8a-4418-9968-08a91be9b91c" />
 
 
 * **Original Frame**
