@@ -60,13 +60,9 @@ python image_video_processing_optimization.py
 ---
 
 ## Image Performance Graph
+<img width="525" height="323" alt="image" src="https://github.com/user-attachments/assets/501569d0-2a72-48f3-b5dc-958aa749b549" />
 
-![Bar Graph](image_graph.png)
-
-### Description
-
-This bar graph compares execution time between sequential and optimized processing.
-
+This bar graph compares execution time between sequential and optimized processing
 * Sequential processing takes significantly more time due to repeated pixel operations
 * Optimized processing is much faster due to vectorized computation
 * The graph clearly highlights the performance improvement
@@ -75,11 +71,9 @@ This bar graph compares execution time between sequential and optimized processi
 
 ## Video Processing Results
 
-![Original Frame](video_original.png)
-![Sequential Frame](video_sequential.png)
-![Optimized Frame](video_optimized.png)
+<img width="579" height="242" alt="image" src="https://github.com/user-attachments/assets/ef2ad9eb-8673-4ce9-a06d-3b3257d4eea4" />
+<img width="523" height="322" alt="image" src="https://github.com/user-attachments/assets/5271380c-9eb5-42a7-8af9-fa0eb32d6dc4" />
 
-### Description
 
 * **Original Frame**
   A frame extracted directly from the input video.
@@ -95,13 +89,9 @@ This bar graph compares execution time between sequential and optimized processi
 ---
 
 ## Video Performance Graph
-
-![Video Graph](video_graph.png)
-
-### Description
+<img width="756" height="399" alt="image" src="https://github.com/user-attachments/assets/96e7b9c8-7190-4980-ac3e-f8b22db0296f" />
 
 This line graph shows processing time per frame.
-
 * **X-axis:** Frame number
 * **Y-axis:** Execution time
 
@@ -110,6 +100,16 @@ This line graph shows processing time per frame.
 * Sequential processing shows higher and fluctuating execution time
 * Optimized processing remains low and consistent
 * Demonstrates efficiency of vectorized operations in continuous workloads
+
+**Performance Metrics**
+Image Processing Time:
+*Sequential Processing Time: ~1.72 seconds
+*Optimized Processing Time: ~0.0076 seconds
+Speedup
+*Speedup Factor: ~226× faster
+*Video Processing Time
+*Sequential processing takes significantly higher time per frame
+*Optimized processing maintains very low and consistent execution time
 
 ---
 
