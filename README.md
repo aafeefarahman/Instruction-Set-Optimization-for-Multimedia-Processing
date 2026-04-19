@@ -1,4 +1,5 @@
-<img width="677" height="112" alt="image" src="https://github.com/user-attachments/assets/bcdd76cd-ebd0-4952-815c-0c487ae032d3" />
+<img width="1197" height="188" alt="image" src="https://github.com/user-attachments/assets/c1290b41-d228-46ba-a125-5b2ed796b41b" />
+
 ## Overview
 
 This project demonstrates how optimized processing techniques improve performance in multimedia applications. It compares traditional sequential (loop-based) processing with optimized vectorized processing using NumPy.
