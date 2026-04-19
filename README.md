@@ -102,15 +102,21 @@ This line graph shows processing time per frame.
 * Optimized processing remains low and consistent
 * Demonstrates efficiency of vectorized operations in continuous workloads
 
-**Performance Metrics**
-Image Processing Time:
-*Sequential Processing Time: ~1.72 seconds
-*Optimized Processing Time: ~0.0076 seconds
-Speedup
-*Speedup Factor: ~226× faster
-*Video Processing Time
-*Sequential processing takes significantly higher time per frame
-*Optimized processing maintains very low and consistent execution time
+## Performance Metrics
+
+### Image Processing Time
+
+- **Sequential Processing Time:** ~1.72 seconds  
+- **Optimized Processing Time:** ~0.0076 seconds  
+
+### Speedup
+
+- **Speedup Factor:** ~226× faster  
+
+### Video Processing Time
+
+- Sequential processing takes significantly higher time per frame  
+- Optimized processing maintains very low and consistent execution time  
 
 ---
 
