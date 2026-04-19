@@ -2,14 +2,9 @@
 
 ## Overview
 
-This project demonstrates how optimized processing techniques significantly improve performance compared to traditional sequential methods.
+This project demonstrates how optimized processing techniques improve performance in multimedia applications. It compares traditional sequential (loop-based) processing with optimized vectorized processing using NumPy.
 
-It processes both images and videos using:
-
-* Sequential (loop-based) approach
-* Optimized (NumPy vectorized) approach
-
-The execution time of both methods is measured and compared to show performance improvement.
+The project processes both images and videos, measures execution time, and visualizes performance differences using graphs.
 
 ---
 
@@ -26,150 +21,123 @@ The execution time of both methods is measured and compared to show performance 
 
 1. Install dependencies:
 
-```
+```bash
 pip install opencv-python numpy matplotlib
 ```
 
 2. Keep these files in the same folder:
 
-* `image_video_processing_optimization.py`
-* `eagleeye.jpg`
-* `ocean_video_fixed.mp4`
+* image_video_processing_optimization.py
+* eagleeye.jpg
+* ocean_video_fixed.mp4
 
-3. Run:
+3. Run the program:
 
-```
+```bash
 python image_video_processing_optimization.py
 ```
 
 ---
 
-## Image Processing Outputs
+## Image Processing Results
+<img width="971" height="400" alt="image" src="https://github.com/user-attachments/assets/5347414d-95ab-4df3-85ba-03f3ae38d5d2" />
 
-### Original Image
 
-This is the input image loaded into the system.
-It is resized (if large) and converted from BGR to RGB format for correct display.
+* **Original Image**
+  The input image loaded into the system before any processing.
 
----
+* **Sharpened Image**
+  The image after applying Gaussian blur for noise reduction and a sharpening filter to enhance edges and clarity.
 
-### Sharpened Image
+* **Loop Processing (Sequential)**
+  Brightness is increased pixel-by-pixel using nested loops.
+  This method is slower because each pixel is processed individually.
 
-The image after applying:
-
-* Gaussian Blur (for noise reduction)
-* Sharpening filter (to enhance edges and details)
-
-This step improves visual quality before further processing.
-
----
-
-### Sequential Processing Output
-
-* Brightness is increased pixel-by-pixel using nested loops
-* Each pixel is processed individually
-
-**Observation:**
-
-* Slower execution
-* High computation time due to repeated operations
+* **Optimized Processing**
+  Brightness is increased using NumPy vectorized operations.
+  This method processes all pixels simultaneously, resulting in much faster execution.
 
 ---
 
-### Optimized Processing Output
+## Image Performance Graph
 
-* Brightness is increased using NumPy vectorized operations
-* Entire image is processed at once
+![Bar Graph](image_graph.png)
 
-**Observation:**
+### Description
 
-* Extremely fast execution
-* Efficient use of CPU
+This bar graph compares execution time between sequential and optimized processing.
 
----
-
-## Image Performance Graph (Bar Graph)
-
-This graph compares execution time between:
-
-* Sequential Processing
-* Optimized Processing
-
-**What it shows:**
-
-* Sequential method has significantly higher execution time
-* Optimized method is much faster
-* Demonstrates clear performance improvement using vectorization
+* Sequential processing takes significantly more time due to repeated pixel operations
+* Optimized processing is much faster due to vectorized computation
+* The graph clearly highlights the performance improvement
 
 ---
 
-## Video Processing Outputs
+## Video Processing Results
 
-### Original Video Frame
+![Original Frame](video_original.png)
+![Sequential Frame](video_sequential.png)
+![Optimized Frame](video_optimized.png)
 
-Frame extracted directly from the input video without any modification.
+### Description
 
----
+* **Original Frame**
+  A frame extracted directly from the input video.
 
-### Sequential Processed Frame
+* **Sequential Processed Frame**
+  Each pixel is processed individually using nested loops to adjust brightness.
+  This results in slower performance and visible delay.
 
-* Each pixel in the frame is processed using nested loops
-* Brightness is adjusted individually
-
-**Observation:**
-
-* Noticeable delay
-* Slower frame processing
-
----
-
-### Optimized Processed Frame
-
-* Frame processed using vectorized operations
-* All pixels updated simultaneously
-
-**Observation:**
-
-* Smooth and fast processing
-* Suitable for real-time applications
+* **Optimized Processed Frame**
+  Brightness adjustment is applied using vectorized operations.
+  This results in smooth and fast processing suitable for real-time applications.
 
 ---
 
-## Video Performance Graph (Line Graph)
+## Video Performance Graph
 
-This graph shows:
+![Video Graph](video_graph.png)
 
-* X-axis → Frame Number
-* Y-axis → Processing Time
+### Description
 
-**What it shows:**
+This line graph shows processing time per frame.
 
-**Sequential Processing:**
+* **X-axis:** Frame number
+* **Y-axis:** Execution time
 
-* Higher execution time
-* Fluctuating performance
+**Observations:**
 
-**Optimized Processing:**
-
-* Very low execution time
-* Stable and consistent
+* Sequential processing shows higher and fluctuating execution time
+* Optimized processing remains low and consistent
+* Demonstrates efficiency of vectorized operations in continuous workloads
 
 ---
 
-## Key Result
+## Key Results
 
 * Optimized processing is significantly faster than sequential processing
-* Speedup is achieved by reducing pixel-by-pixel operations
-* Demonstrates concepts like SIMD and vector processing
+* High speedup is achieved using vectorization
+* Efficient CPU utilization is demonstrated
+* Suitable for real-time multimedia applications
 
 ---
 
 ## Conclusion
 
-This project proves that vectorized operations greatly improve performance in multimedia processing. It highlights how modern computing systems handle large data efficiently using optimized instruction execution.
+This project proves that vectorized operations drastically reduce execution time compared to traditional loop-based methods. It highlights the importance of instruction set optimization techniques such as SIMD and parallel processing in modern computing.
+
+---
+
+## Future Scope
+
+* Real-time webcam processing
+* GPU acceleration (CUDA/OpenCL)
+* Integration with AI models
+* High-resolution (4K+) processing
+* Parallel computing (multithreading/multiprocessing)
 
 ---
 
 ## Feedback
 
-Feel free to suggest improvements or enhancements.
+Suggestions and improvements are welcome.
